@@ -119,12 +119,21 @@ body {
 }
 /* SECTION HERO */
 .section__hero {
+  height: 80vh;
   margin-top: 14rem;
   gap: 28rem;
 }
 .section__hero_content-left,
 .section__hero_content-right {
   width: 50%;
+}
+
+.section__hero_content-right {
+  align-self: flex-start;
+}
+
+.section__hero_video {
+  scale: 1.2;
 }
 
 .section__hero_heading-primary {
@@ -205,6 +214,91 @@ body {
   object-fit: contain;
 }
 
+/* SECTION FEATURE */
+
+.section__feature {
+  /* margin-top: 14rem; */
+}
+
+.section__feature_details-box {
+  gap: 2.4rem;
+}
+
+.section__feature_item {
+  padding: 3.2rem;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.platform {
+  background: #f2f3f6;
+}
+
+.platform__heading-secondary {
+  background: linear-gradient(
+    315.67deg,
+    #15bebb -3.01%,
+    #702df4 48.66%,
+    #de05dc 102.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marketplace__heading-secondary {
+  background: linear-gradient(89.97deg, #f85b5d 1.63%, #d0f63b 100.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.platform p,
+.marketplace p {
+  font-size: 1.6rem;
+}
+
+.marketplace {
+  background-color: #222;
+  color: #fff;
+}
+
+.section__feature_item {
+  gap: 2rem;
+}
+
+.section__feature_item-container {
+  flex: 5;
+}
+
+.section__feature_content {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.section__feature_image {
+  flex: 1;
+}
+
+.section__feature_image img {
+  width: 12rem;
+}
+
+/* Boundless Creativity */
+
+.section__feature_boundless-box {
+  margin-top: 6.4rem;
+  gap: 2.4rem;
+}
+
+.section__feature_boundless-img-box,
+.section__feature_boundless-feature {
+  width: 50%;
+}
+
+.section__feature_boundless-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
 /*  */
 .grid {
   display: grid;
@@ -246,7 +340,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }

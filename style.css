@@ -330,7 +330,7 @@ body {
 
 .section__feature_boundless-guide-item {
   padding: 2.4rem 2rem;
-  background: #f4f5f6;
+  background: #f4f5f6a1;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -366,6 +366,24 @@ body {
   font-size: 2rem;
   font-weight: 500;
 }
+
+.section__feature_boundless-guide-body p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  padding-left: 1rem;
+}
+
+.section__feature_boundless-guide-body {
+  display: none;
+}
+
+.active {
+  display: block;
+  transition: display 0.4s ease;
+}
+
 /*  */
 .grid {
   display: grid;

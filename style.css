@@ -443,16 +443,16 @@ body {
 .section__solution_roll {
   flex-direction: row;
   gap: 1.5rem;
-  overflow: auto;
-  width: 180rem;
+  overflow: hidden;
+  width: 255rem;
   padding: 0 8rem;
 }
 
 .solution__card {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   padding: 2rem;
-  padding-right: 8rem;
   background-color: #f2f3f6;
   border-radius: 20px;
   width: 50rem;

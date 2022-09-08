@@ -59,14 +59,14 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #222;
 }
 
 /**************************************/
 /* START GENERAL REUSEABLE COMPONENT */
 /**************************************/
 .container {
-  max-width: 120rem;
+  max-width: 160rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -76,12 +76,64 @@ body {
   flex-direction: row;
 }
 /*  */
+.header {
+  margin-top: 2.4rem;
+}
+
+.header_logo {
+  height: 2.4rem;
+  margin-right: 3.2rem;
+}
+
+.nav__link {
+  color: #222;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.getstarted {
+  padding: 1rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.learn {
+  justify-content: space-around;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .spacebetween {
   justify-content: space-between;
 }
 
 .feed {
   flex-direction: column;
+}
+/* SECTION HERO */
+.section__hero {
+  margin-top: 14rem;
+  gap: 28rem;
+}
+
+.section__hero_heading-primary {
+  letter-spacing: -0.5px;
+  font-size: 6.2rem;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.section__hero_content {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
 
 /*  */
@@ -116,21 +168,12 @@ body {
   margin-bottom: 0;
 }
 
-.logo {
-  height: 2.4rem;
-}
-
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -2.5px;
-}
-
-.heading-primary {
-  font-size: 6.2rem;
-  line-height: 1.1;
 }
 
 .heading-secondary {
@@ -158,12 +201,10 @@ body {
 
 .list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 2.4rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   /* font-weight: 500; */
 }
 .btn,
@@ -193,8 +234,8 @@ body {
   background-color: #e67e22;
 }
 
-.btn-more:link,
-.btn-more:visited {
+.btn-getstarted:link,
+.btn-getstarted:visited {
   background-color: #fff;
   color: #444;
 }
@@ -204,8 +245,8 @@ body {
   background-color: #cf711f;
 }
 
-.btn-more:active,
-.btn-more:hover {
+.btn-getstarted:active,
+.btn-getstarted:hover {
   border: none;
   box-shadow: inset 0 0 0 3px #fff;
   background-color: #fdf2e9;

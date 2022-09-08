@@ -16,42 +16,49 @@
   </head>
   <body>
     <div class="container feed">
-      <header class="flex spacebetween">
+      <header class="header flex spacebetween">
         <div class="nav__leftside_container flex">
-          <img src="./Images/niftify-logo.svg" alt="NIFTIFY LOGO" />
-          <ul class="flex">
-            <li><a href="#">About us</a></li>
-            <li>
-              <a href="#">Learn </a
+          <img
+            class="header_logo"
+            src="./Images/niftify-logo.svg"
+            alt="NIFTIFY LOGO"
+          />
+          <ul class="list flex">
+            <li><a class="nav__link" href="#">About us</a></li>
+            <li class="flex learn">
+              <a class="nav__link" href="#">Learn </a
               ><ion-icon name="chevron-down-outline"></ion-icon>
             </li>
-            <li><a href="#">Marketplace</a></li>
+            <li><a class="nav__link" href="#">Marketplace</a></li>
           </ul>
         </div>
 
         <div class="nav__rightside_container">
-          <ul class="flex">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Get Started</a></li>
+          <ul class="list flex">
+            <li><a class="nav__link" href="#">Pricing</a></li>
+            <li><a class="nav__link" href="#">Log in</a></li>
+            <li><a class="nav__link getstarted" href="#">Get Started</a></li>
           </ul>
         </div>
       </header>
 
-      <div class="section__hero">
+      <div class="section__hero flex spacebetween">
         <div class="section__hero_content-left">
-          <h1 class="section__hero_main-title">
-            Start & run your NFT business in minutes.
+          <h1 class="section__hero_heading-primary">
+            Start & run your NFT business <br />
+            <span>in minutes</span>.
           </h1>
           <p class="section__hero_content">No coding or crypto required</p>
           <div class="section__hero_actions">
-            <button class="btn section__hero_btn">Get Started</button>
-            <button class="btn section__hero_btn">Marketplace</button>
+            <button class="btn btn-cta .btn-getstarted section__hero_btn">
+              Get Started
+            </button>
+            <button class="btn btn-cta section__hero_btn">Marketplace</button>
           </div>
         </div>
 
-        <div>
-          <video src="./"></video>
+        <div class="section__hero_content-right">
+          <video src="./videos/hero-video.mp4" width="400px"></video>
         </div>
       </div>
     </div>

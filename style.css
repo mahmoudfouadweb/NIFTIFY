@@ -66,7 +66,7 @@ body {
 /* START GENERAL REUSEABLE COMPONENT */
 /**************************************/
 .container {
-  max-width: 160rem;
+  max-width: 138rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -77,7 +77,7 @@ body {
 }
 /*  */
 .header {
-  margin-top: 2.4rem;
+  margin-top: 3.2em;
 }
 
 .header_logo {
@@ -122,18 +122,81 @@ body {
   margin-top: 14rem;
   gap: 28rem;
 }
+.section__hero_content-left,
+.section__hero_content-right {
+  width: 50%;
+}
 
 .section__hero_heading-primary {
   letter-spacing: -0.5px;
   font-size: 6.2rem;
   line-height: 1.1;
   margin-bottom: 2.4rem;
+  padding-right: 2rem;
 }
 
 .section__hero_content {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+.section__hero_actions {
+  gap: 1.6rem;
+}
+
+.section__hero_btn {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 1.8rem;
+  border-radius: 50px;
+}
+
+.color-text {
+  background: linear-gradient(
+    315.67deg,
+    #15bebb -3.01%,
+    #702df4 48.66%,
+    #de05dc 102.53%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.btn-cta {
+  font-weight: 600;
+
+  background: linear-gradient(
+    315.67deg,
+    #15bebb -3.01%,
+    #702df4 48.66%,
+    #de05dc 102.53%
+  );
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.btn-regular {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  font-weight: 600;
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  background-color: #fff;
+  color: #444;
+}
+
+.btn-cta:active,
+.btn-cta:hover {
+  box-shadow: 0px 0px 10px rgba(31, 248, 255, 0.84);
 }
 
 /*  */
@@ -220,36 +283,6 @@ body {
   /* only necessary for .btn */
   border: none;
   cursor: pointer;
-}
-
-.btn:active,
-.btn:hover {
-  /* transition: background-color 0.5s; */
-  transition: all 0.5s;
-}
-
-.btn-cta:link,
-.btn-cta:visited {
-  color: #fff;
-  background-color: #e67e22;
-}
-
-.btn-getstarted:link,
-.btn-getstarted:visited {
-  background-color: #fff;
-  color: #444;
-}
-
-.btn-cta:active,
-.btn-cta:hover {
-  background-color: #cf711f;
-}
-
-.btn-getstarted:active,
-.btn-getstarted:hover {
-  border: none;
-  box-shadow: inset 0 0 0 3px #fff;
-  background-color: #fdf2e9;
 }
 
 .btn.btn-form {

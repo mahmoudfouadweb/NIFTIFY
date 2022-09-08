@@ -102,6 +102,11 @@ body {
   background-color: #000;
   color: #fff;
   border-radius: 50px;
+  transition: box-shadow 0.3s ease;
+}
+
+.getstarted:hover {
+  box-shadow: 0px 0px 10px rgba(31, 248, 255, 0.84);
 }
 
 .learn {
@@ -191,6 +196,12 @@ body {
   background-color: #fff;
   border: 1px solid #bbb;
   font-weight: 600;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.btn-regular:hover {
+  box-shadow: 0px 0px 10px rgba(31, 248, 255, 0.84);
 }
 
 .btn-cta:link,
@@ -228,6 +239,11 @@ body {
   padding: 3.2rem;
   border-radius: 20px;
   width: 50%;
+  transition: scale 0.9s ease;
+}
+
+.section__feature_item:hover {
+  scale: 1.03;
 }
 
 .platform {
@@ -256,6 +272,11 @@ body {
   font-size: 1.6rem;
 }
 
+.section__feature_item-access .platform_a {
+  font-size: 1.6rem;
+  color: #000;
+}
+
 .marketplace {
   background-color: #222;
   color: #fff;
@@ -272,6 +293,23 @@ body {
 .section__feature_content {
   font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.section__feature_item-access {
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.section__feature_item-access a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.section__feature_item-icon {
+  font-size: 2rem;
 }
 
 .section__feature_image {
@@ -285,8 +323,16 @@ body {
 /* Boundless Creativity */
 
 .section__feature_boundless-box {
+  height: 100%;
   margin-top: 6.4rem;
   gap: 2.4rem;
+}
+
+.section__feature_boundless-guide-item {
+  padding: 2.4rem 2rem;
+  background: #f4f5f6;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .section__feature_boundless-img-box,
@@ -299,6 +345,27 @@ body {
   height: 100%;
 }
 
+.section__feature_boundless-description {
+  margin-bottom: 7rem;
+}
+
+.section__feature_boundless-description-heading {
+  font-size: 3.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-left: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.section__feature_boundless-guide-box {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.section__feature_boundless-guide-box h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
 /*  */
 .grid {
   display: grid;
@@ -342,7 +409,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .heading-tertiary {
